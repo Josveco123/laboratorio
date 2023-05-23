@@ -193,7 +193,7 @@ comienza pagina 2 acerca de nosotros
     flex-direction: column;
     font-size: 35px;
     justify-content: center;
-  align-items: center;
+    align-items: center;
     width: 100%;
     height: 200px;
     background-color: rgb(180, 22, 22);
@@ -205,18 +205,11 @@ comienza pagina 2 acerca de nosotros
     flex-direction: row;
     padding-top: 40px;
 }
-
-#nosotros-I {
-    width: 48%;
+.css-pag {
+    width: 49%;
     text-align: justify;
     padding: 0 10px 10px 50px;
-    font-family: Verdana;
-}
-#nosotros-D {
-    width: 48%;
-    text-align: justify;
-    padding: 0 10px 10px 50px;
-    font-family: Verdana;
+    font-family: Verdana;   
 }
 
 .tit-nos {
@@ -228,6 +221,7 @@ comienza pagina 2 acerca de nosotros
     background-color: rgb(205, 62, 62);
     justify-content: center;
     align-items: center;
+    font-size: 25px;
 }
 #cuadrado {
     border: 1px solid black;
@@ -260,3 +254,60 @@ comienza pagina 2 acerca de nosotros
     width: 100%;
     height: 100%;
   }
+
+/*inicia pagina 3 =======================================*/
+
+  #pagina3 {
+    background-color: rgb(180, 22, 22);
+    color:white;
+    padding: 60px 50px 10px 50px;
+  }
+  .tit-nos-pag3 {
+    color: white;
+    font-weight: bold;
+     font-size: 25px;
+}
+#linea-horizontal {
+    border-bottom: 2px solid white;
+  }
+  .p-pag3 {    
+    font-family: Verdana; 
+}
+
+
+/*aqui prueba ===========================*/
+.image-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+  }
+  
+ .borde-image {
+    display: flex;
+    position: relative; 
+    width: 23%;
+    height: 350px;
+    background-color: white;
+
+  }
+  .image {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+  
+  .image img {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 80%;
+    height: auto;
+   }
+
+.tit-image {
+   width: 100%;
+    height: 50px;
+    color:rgb(252, 250, 250);
+    background-color: rgb(205, 62, 62);
+}
