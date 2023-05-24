@@ -314,7 +314,7 @@ comienza pagina 2 acerca de nosotros
 /*inicia pagina 4 =======================================*/
 
 #pagina4 {
-  background-color: rgb(195, 188, 188);
+  background-color: rgb(238, 234, 234);
   padding: 40px 50px 10px 50px;
 }
 .tit-nos-pag4 {
@@ -327,4 +327,48 @@ comienza pagina 2 acerca de nosotros
 }
 #linea-horizontal4 {
   border-bottom: 1px solid rgb(205, 62, 62);
+}
+
+#direcciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(248, 244, 244);
+  width: 100%;
+  padding: 20px;
+  height: 480px;
+}
+#direcciones-I {
+  width: 35%;
+}
+#direcciones-D {
+  width: 62%;
+}
+.tit-pag4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height: 40px;
+color: white;
+font-weight: bold;
+background-color: rgb(205, 62, 62);
+font-size: 20px;
+}
+
+.pag4-I {
+  width: 100%;
+}
+.pag4-D {
+  width: 100%;
+}
+#zonaID {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#zonaI {
+  width: 45%;
+}
+#zonaD {
+  width: 50%;
 }
