@@ -313,6 +313,9 @@ comienza pagina 2 acerca de nosotros
 
 /*inicia pagina 4 =======================================*/
 
+
+/*inicia pagina 4.1=======================================*/
+
 #pagina4 {
   background-color: rgb(238, 234, 234);
   padding: 40px 50px 10px 50px;
@@ -371,4 +374,55 @@ font-size: 20px;
 }
 #zonaD {
   width: 50%;
+}
+
+/*inicia pagina 4.2 =======================================*/
+#correos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: rgb(252, 249, 249);
+  padding: 40px 50px 10px 15px;
+}
+#correosI {
+  width: 42%;
+}
+#correosD {
+  width: 53%;
+}
+.tit-pag4D {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+
+/* prueba para formulario*/
+
+#formulario-correo {
+  display: grid;
+  gap: 5px
+}
+
+.label-correo {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  width: 25%;
+  background-color: rgb(205, 62, 62);
+  border-radius: 50px;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
