@@ -1,17 +1,17 @@
 const images = [
-    { src: '/images/pro1.jpg', title: 'Medicamento 1' },
-    { src: '/images/pro2.jpg', title: 'Medicamento 2' },
-    { src: '/images/pro3.jpg', title: 'Medicamento 3' },
-    { src: '/images/pro4.jpg', title: 'Medicamento 4' },
-    { src: '/images/pro5.jpg', title: 'Medicamento 5' },
-    { src: '/images/pro6.jpg', title: 'Medicamento 6' },
-    { src: '/images/pro7.jpg', title: 'Medicamento 7' },
-    { src: '/images/pro8.jpg', title: 'Medicamento 8' },
-    { src: '/images/pro9.jpg', title: 'Medicamento 9' },
-    { src: '/images/pro10.jpg', title: 'Medicamento 10' },
-    { src: '/images/pro11.jpg', title: 'Medicamento 11' },
-    { src: '/images/pro12.jpg', title: 'Medicamento 12' },
-    { src: '/images/pro13.jpg', title: 'Medicamento 13' }
+    { src: '/images/pro1.jpg', title: 'ARTRIXIN' },
+    { src: '/images/pro2.jpg', title: 'EROKON' },
+    { src: '/images/pro3.jpg', title: 'HELMIFLU' },
+    { src: '/images/pro4.jpg', title: 'HITALKÉ' },
+    { src: '/images/pro5.jpg', title: 'INFIBU-M' },
+    { src: '/images/pro6.jpg', title: 'NOMANTÉ' },
+    { src: '/images/pro7.jpg', title: 'NOMANTÉ' },
+    { src: '/images/pro8.jpg', title: 'SINTOMAX' },
+    { src: '/images/pro9.jpg', title: 'SINTROX' },
+    { src: '/images/pro10.jpg', title: 'VITIFER' },
+    { src: '/images/pro11.jpg', title: 'VITIFER PLUS' },
+    { src: '/images/pro12.jpg', title: 'VITAMINA C' },
+    { src: '/images/pro13.jpg', title: 'SINUPHIS' }
     // ... Agrega las otras imágenes y títulos aquí
   ];
   
