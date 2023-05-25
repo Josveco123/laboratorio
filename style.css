@@ -26,7 +26,7 @@
 header {
   position: fixed;
   width: 100%;
-  z-index: 9999;
+  z-index: 9998;
 }
 #a-imagen {
   position: fixed;
@@ -116,7 +116,7 @@ ul li a {
 
 #muesca {
   margin-left: 205px;
-  margin-top: -40px;
+  margin-top: 60px;
   width: 40px;
   height: 40px;
   background-color: rgb(171, 197, 157);
@@ -154,10 +154,12 @@ ul li a {
   border-radius: 0px 25px 0px 0px;
   border: 2px solid rgb(218, 209, 209);
   display: none;
+
 }
 
 #zona-menu.show {
   display: block;
+
 }
 
 .zona-item {
@@ -174,12 +176,12 @@ ul li a {
 
 #muesca1 {
   margin-left: 360px;
-  margin-top: -40px;
+  margin-top: 60px;
   width: 40px;
   height: 40px;
   background-color: rgb(171, 197, 157);
   transform: rotate(45deg);
-  z-index: 0;
+  z-index: 1;
   display: none;
 }
 
@@ -198,6 +200,7 @@ comienza pagina 2 acerca de nosotros
 */
 
 #transcision {
+  margin-top: 100px;
   display: flex;
   font-style: italic;
   font-weight: bold;
@@ -275,6 +278,7 @@ comienza pagina 2 acerca de nosotros
 }
 
 .tit-nos-pag3 {
+  margin-top: 40px;
   color: white;
   font-weight: bold;
   font-family: Verdana;
