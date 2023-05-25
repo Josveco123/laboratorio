@@ -17,6 +17,13 @@
   text-justify: auto;
 }
 
+#a-imagen {
+  position: fixed;
+  top: 500px; /* Ajusta esta propiedad según tus necesidades */
+  left: 50px; /* Ajusta esta propiedad según tus necesidades */
+  z-index: 9999; /* Asegúrate de que el valor del z-index sea mayor que el de los demás elementos */
+}
+
 #border-logo {
   padding: 4px;
   background-color: white;
@@ -313,7 +320,6 @@ comienza pagina 2 acerca de nosotros
 
 /*inicia pagina 4 =======================================*/
 
-
 /*inicia pagina 4.1=======================================*/
 
 #pagina4 {
@@ -351,11 +357,11 @@ comienza pagina 2 acerca de nosotros
   display: flex;
   justify-content: center;
   align-items: center;
-height: 40px;
-color: white;
-font-weight: bold;
-background-color: rgb(205, 62, 62);
-font-size: 20px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(205, 62, 62);
+  font-size: 20px;
 }
 
 .pag4-I {
@@ -397,12 +403,11 @@ font-size: 20px;
   font-size: 25px;
 }
 
-
 /* prueba para formulario*/
 
 #formulario-correo {
   display: grid;
-  gap: 5px
+  gap: 5px;
 }
 
 .label-correo {
@@ -425,4 +430,73 @@ input[type="submit"] {
   color: white;
   border: none;
   cursor: pointer;
+}
+
+#gogle-map {
+  padding-bottom: 50px;
+}
+
+/* inicio pagina 5 =====================================*/
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height:560px;
+  background-color: black;
+  padding: 0 15px 0px 15px;
+}
+
+#footer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 45px;
+  background-color: #343232;
+}
+
+.footer1-hijo {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+justify-content: center;
+  width: 30%;
+  color: white;
+  height: 300px;
+  margin-top: 50px;
+}
+.footer1-hijo p{
+  color:white;
+}
+#redesS {
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+  padding-right: 100px;
+}
+
+#revista {
+  width: 50%;
+}
+
+#footer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  height: 70px;
+  background-color: #343232;
+}
+
+#footer2 p {
+  display: flex;
+  color: white;
+  width: 40%;
+align-items: center;
+}
+#footer2-hijo2 {
+  display: flex;
+  justify-content: end;
+
 }
