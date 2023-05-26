@@ -8,40 +8,74 @@
 }
 
 #linea1 {
+  position: fixed;
   margin: 0;
   width: 100%;
   height: 30px;
+  font-size: 20px;
   padding: 0 0 0 20px;
-  color: rgb(216, 211, 211);
-  background-color: dimgrey;
-  text-justify: auto;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(252, 4, 4);
+  overflow: hidden;
+}
+
+.deslizar-texto {
+  display: inline-block;
+  white-space: nowrap;
+  animation: deslizar 10s linear infinite;
+}
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(100%);
+  }
+  
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.deslizar-texto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  z-index: -1;
+  background-attachment: fixed;
 }
 
 /* comienzo de pagina 1===========================*/
-
+ /*
 #pagina1 {
-  margin-top: 100px;
+ margin-top: 100px;
 }
-
+*/
 header {
   position: fixed;
   width: 100%;
-  z-index: 9998;
+  z-index: 1;
 }
+
+#pagina1 {
+margin-top:100px;
+}
+
 #a-imagen {
   position: fixed;
   top: 500px; /* Ajusta esta propiedad según tus necesidades */
   left: 50px; /* Ajusta esta propiedad según tus necesidades */
-  z-index: 9999; /* Asegúrate de que el valor del z-index sea mayor que el de los demás elementos */
+  z-index: 1; /* Asegúrate de que el valor del z-index sea mayor que el de los demás elementos */
 }
 
 #border-logo {
   padding: 4px;
   background-color: white;
   border-radius: 25px;
-  background: linear-gradient(to right, white, #ebeeeb);
   border: 1px solid #f8fcf8;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }
 
 /* Esta area corresponde a producto*/
@@ -58,25 +92,24 @@ header {
   font-size: 20px;
   width: 140px;
   height: 50px;
-  color: rgb(73, 68, 79);
+  color: rgb(252, 252, 252);
 }
 
 #ver-productos:hover {
-  color: rgb(163, 152, 176);
+  color: rgb(253, 204, 204);
 }
 
 .navbar {
-  color: white;
-  background: linear-gradient(to right, #f5f3f3, #a9ada9);
+  color: rgb(248, 243, 243);
 }
 
 #producto-menu {
   margin-top: 10px;
   width: 130px;
   padding: 5px;
-  background-color: rgb(171, 197, 157);
+  background-color: rgb(226, 222, 222);
   border-radius: 0px 25px 0px 0px;
-  border: 2px solid rgb(218, 209, 209);
+  border: 2px solid rgb(254, 8, 8);
   display: none;
 }
 
@@ -87,7 +120,7 @@ header {
 .producto-item {
   width: 115px;
   display: inline-block;
-  color: black;
+  color: rgb(252, 8, 8);
   margin: 0;
   padding: 0;
 }
@@ -115,15 +148,16 @@ ul li a {
 }
 
 #muesca {
+  position: fixed;
   margin-left: 205px;
-  margin-top: 60px;
-  width: 40px;
-  height: 40px;
-  background-color: rgb(171, 197, 157);
-  transform: rotate(45deg);
-  z-index: 1;
+  margin-top: 50px;
+  width: 20px;
+  height: auto;
+  z-index: 2;
   display: none;
-}
+
+  }
+  
 /* fin de area de producto==================================*/
 /* Esta area corresponde a Zonas*/
 #zona {
@@ -139,20 +173,20 @@ ul li a {
   font-size: 20px;
   width: 140px;
   height: 50px;
-  color: rgb(73, 68, 79);
+  color: rgb(252, 252, 252);
 }
 
 #ver-zona:hover {
-  color: rgb(181, 166, 196);
+  color: rgb(253, 204, 204);
 }
 
 #zona-menu {
   margin-top: 10px;
   width: 130px;
   padding: 5px;
-  background-color: rgb(171, 197, 157);
+  background-color: rgb(226, 222, 222);
   border-radius: 0px 25px 0px 0px;
-  border: 2px solid rgb(218, 209, 209);
+  border: 2px solid rgb(254, 8, 8);
   display: none;
 
 }
@@ -165,7 +199,7 @@ ul li a {
 .zona-item {
   width: 115px;
   display: inline-block;
-  color: black;
+  color: rgb(252, 8, 8);
   margin: 0;
   padding: 0;
 }
@@ -175,32 +209,50 @@ ul li a {
 }
 
 #muesca1 {
+  position: fixed;
   margin-left: 360px;
-  margin-top: 60px;
-  width: 40px;
-  height: 40px;
-  background-color: rgb(171, 197, 157);
-  transform: rotate(45deg);
-  z-index: 1;
+  margin-top: 50px;
+  width: 20px;
+  height: auto;
+  z-index: 2;
   display: none;
 }
-
-/*cuerpo del trabajo*/
-#cuerpo {
-  position: absolute;
-  padding: 0 2px 0 2px;
-  width: 100%;
-  height: 300px;
-  z-index: 4;
+/*menu de la  navegacio interna*/
+.nav-interno {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
 }
+.mnu-pagina {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  z-index: 5;
+}
+.ver-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: impact;
+  font-size: 15px;
+  width: 140px;
+  height: 20px;
+  color: rgb(252, 252, 252);
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
 /*
 ***
 comienza pagina 2 acerca de nosotros 
-****
-*/
+*****/
+
 
 #transcision {
-  margin-top: 100px;
   display: flex;
   font-style: italic;
   font-weight: bold;
@@ -209,7 +261,7 @@ comienza pagina 2 acerca de nosotros
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 200px;
+  height: 100px;
   background-color: rgb(180, 22, 22);
   color: white;
 }

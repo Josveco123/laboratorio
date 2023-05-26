@@ -79,3 +79,26 @@ document.addEventListener('click', function (event) {
     cerrarMenuZ();
   }
 });
+
+// deslizamiento liea 1 =======================
+//************************************* */
+function deslizarDiv() {
+  var div = document.getElementById('linea1');
+  var width = div.offsetWidth;
+  var windowWidth = window.innerWidth;
+  var currentPosition = 0;
+  var interval = setInterval(frame, 10);
+
+  function frame() {
+    if (currentPosition >= windowWidth) {
+      clearInterval(interval);
+      div.style.left = '0px';
+      deslizarDiv(); // Reiniciar el deslizamiento
+    } else {
+      currentPosition++;
+      div.style.right = currentPosition + 'px';
+    }
+  }
+}
+
+deslizarDiv(); // Iniciar el deslizamiento al cargar la página
