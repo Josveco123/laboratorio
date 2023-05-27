@@ -1,0 +1,559 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin:0;
+  padding: 0;
+}
+#todo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+#encabezado {
+  display: flex;
+  width: 100%;
+}
+
+#linea1 {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 30px;
+  padding: 0 0 0 2%;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(252, 4, 4);
+  overflow: hidden;
+}
+
+#deslizar-texto {
+  position: absolute;
+  margin-top: 3px;
+  font-size: 1.3rem;
+
+  color: white;
+  font-weight: bold;
+  line-height: 1.3rem;
+}
+
+
+/* comienzo de pagina 1===========================*/
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#pagina1 {
+margin-top:100px;
+}
+
+#a-imagen {
+  position: fixed;
+  top: 500px; /* Ajusta esta propiedad según tus necesidades */
+  left: 3rem; /* Ajusta esta propiedad según tus necesidades */
+  z-index: 1; /* Asegúrate de que el valor del z-index sea mayor que el de los demás elementos */
+}
+
+#border-logo {
+  padding: 4px;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid #f8fcf8;
+}
+
+/* Esta area corresponde a producto*/
+#producto {
+  width: 6.5rem;
+  height: 70px;
+  padding-top: 29px;
+  margin-left: 2.1rem;
+  z-index: 5;
+}
+
+.menu1 {
+  font-family: Impact;
+  font-size: 1.1rem;
+  width: 100%;
+  height: 50px;
+  color: rgb(252, 252, 252);
+ 
+}
+
+#ver-productos:hover {
+  color: rgb(252, 2, 2);
+}
+
+.navbar {
+  color: rgb(248, 243, 243);
+}
+
+#producto-menu {
+  margin-top: 10px;
+  width: 130px;
+  padding: 5px;
+  background-color: rgb(226, 222, 222);
+  border-radius: 0px 25px 0px 0px;
+  border: 2px solid rgb(254, 8, 8);
+  display: none;
+}
+
+#producto-menu.show {
+  display: block;
+}
+
+.producto-item {
+  width: 115px;
+  display: inline-block;
+  color: rgb(252, 8, 8);
+  margin: 0;
+  padding: 0;
+}
+.producto-item:hover {
+  background-color: rgb(163, 138, 138);
+  color: rgb(219, 227, 218);
+}
+
+#logo {
+  width: 110px;
+  height: auto;
+}
+
+.bg-dark-gray {
+  background-color: #333;
+  height: 70px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+#muesca {
+  position: fixed;
+  margin-left: 185px;
+  margin-top: 50px;
+  width: 20px;
+  height: auto;
+  z-index: 2;
+  display: none;
+
+  }
+  
+/* fin de area de producto==================================*/
+/* Esta area corresponde a Zonas*/
+#zona {
+  width: 100px;
+  height: 70px;
+  padding-top: 29px;
+  margin-left: 10px;
+  z-index: 5;
+}
+
+
+#ver-zona:hover {
+  color: rgb(252, 5, 5);
+}
+
+#zona-menu {
+  margin-top: 10px;
+  width: 130px;
+  padding: 5px;
+  background-color: rgb(226, 222, 222);
+  border-radius: 0px 25px 0px 0px;
+  border: 2px solid rgb(254, 8, 8);
+  display: none;
+
+}
+
+#zona-menu.show {
+  display: block;
+
+}
+
+.zona-item {
+  width: 115px;
+  display: inline-block;
+  color: rgb(252, 8, 8);
+  margin: 0;
+  padding: 0;
+}
+.zona-item:hover {
+  background-color: rgb(163, 138, 138);
+  color: rgb(219, 227, 218);
+}
+
+#muesca1 {
+  position: fixed;
+  margin-left: 300px;
+  margin-top: 50px;
+  width: 20px;
+  height: auto;
+  z-index: 2;
+  display: none;
+}
+/*menu de la  navegacio interna*/
+.nav-interno {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.mnu-pagina {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  z-index: 5;
+}
+.ver-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: impact;
+  font-size: 15px;
+  width: 140px;
+  height: 20px;
+  color: rgb(252, 252, 252);
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+/*
+***
+comienza pagina 2 acerca de nosotros 
+*****/
+
+
+#transcision {
+  display: flex;
+  font-style: italic;
+  font-weight: bold;
+  flex-direction: column;
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(180, 22, 22);
+  color: white;
+}
+
+#mnu-nosotros {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+}
+.css-pag {
+  width: 49%;
+  text-align: justify;
+  padding: 0 10px 10px 50px;
+  font-family: Verdana;
+}
+
+.tit-nos {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(205, 62, 62);
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+#cuadrado {
+  border: 1px solid black;
+  padding: 40px;
+}
+
+.list-container {
+  margin-left: 20px; /* Ajusta el margen izquierdo de la lista */
+}
+
+.list-container span {
+  display: block;
+  margin-bottom: 10px; /* Agrega espacio entre los elementos */
+  position: relative;
+  padding-left: 15px; /* Ajusta el espacio para la viñeta */
+}
+
+.list-container span::before {
+  content: "\2022"; /* Agrega el símbolo de viñeta */
+  position: absolute;
+  left: 0;
+}
+#foto {
+  width: 100%;
+  padding: 5px;
+  height: 270px;
+}
+
+#foto img {
+  width: 100%;
+  height: 100%;
+}
+
+/*inicia pagina 3 =======================================*/
+
+#pagina3 {
+  background-color: rgb(180, 22, 22);
+  color: white;
+  padding: 60px 50px 10px 50px;
+}
+
+.tit-nos-pag3 {
+  margin-top: 40px;
+  color: white;
+  font-weight: bold;
+  font-family: Verdana;
+  font-size: 25px;
+}
+
+#linea-horizontal {
+  border-bottom: 1px solid white;
+}
+.p-pag3 {
+  font-family: Verdana;
+}
+
+/*desde js ===========================*/
+.image-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.borde-image {
+  display: flex;
+  position: relative;
+  width: 23%;
+  height: 370px;
+  background-color: white;
+}
+.image {
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.image img {
+  margin-top: 5px;
+  width: 75%;
+  height: auto;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+
+.tit-image {
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  color: rgb(252, 250, 250);
+  background-color: rgb(205, 62, 62);
+}
+
+/*inicia pagina 4 =======================================*/
+
+/*inicia pagina 4.1=======================================*/
+
+#pagina4 {
+  background-color: rgb(238, 234, 234);
+  padding: 40px 50px 10px 50px;
+}
+.tit-nos-pag4 {
+  display: flex;
+  justify-content: center;
+  color: rgb(173, 54, 54);
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Verdana;
+}
+#linea-horizontal4 {
+  border-bottom: 1px solid rgb(205, 62, 62);
+}
+
+#direcciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(248, 244, 244);
+  width: 100%;
+  padding: 20px;
+  height: 480px;
+}
+#direcciones-I {
+  width: 35%;
+}
+#direcciones-D {
+  width: 62%;
+}
+.tit-pag4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(205, 62, 62);
+  font-size: 20px;
+}
+
+.pag4-I {
+  width: 100%;
+}
+.pag4-D {
+  width: 100%;
+}
+#zonaID {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#zonaI {
+  width: 45%;
+}
+#zonaD {
+  width: 50%;
+}
+
+/*inicia pagina 4.2 =======================================*/
+#correos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: rgb(252, 249, 249);
+  padding: 40px 50px 10px 15px;
+}
+#correosI {
+  width: 42%;
+}
+#correosD {
+  width: 53%;
+}
+.tit-pag4D {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+/* prueba para formulario*/
+
+#formulario-correo {
+  display: grid;
+  gap: 5px;
+}
+
+.label-correo {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  width: 25%;
+  background-color: rgb(205, 62, 62);
+  border-radius: 50px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#gogle-map {
+  padding-bottom: 50px;
+}
+
+/* inicio pagina 5 =====================================*/
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 560px;
+  background-color: black;
+  padding: 0 15px 0px 15px;
+}
+
+#footer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 45px;
+  background-color: #343232;
+}
+
+.footer1-hijo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+  width: 30%;
+  color: white;
+  height: 300px;
+  margin-top: 50px;
+}
+.footer1-hijo p {
+  color: white;
+}
+#redesS {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-right: 100px;
+}
+
+#revista {
+  width: 50%;
+}
+
+#footer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: #343232;
+}
+
+#footer2 p {
+  display: flex;
+  color: white;
+  width: 40%;
+  align-items: center;
+}
+#footer2-hijo2 {
+  display: flex;
+  justify-content: end;
+}
+
+
+/*comienza la parte de @ zoom */
+
+@media screen (max-width: 1000px) {
+  body {
+zoom: 0.7;    
+  }
+  
+}

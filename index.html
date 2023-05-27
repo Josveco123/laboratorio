@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <title>Laboratorio</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="todo">
+    <!-- comienza  la seccion de encabezados en HTML -->
+    <div id="mnu-encabezado">
+      <header>
+        <nav class="navbar navbar-expand-md bg-dark-gray">
+          <div class="container-fluid">
+            <div id="border-logo">
+              <a class="navbar-brand" href="#"><img id="logo" src="/images/logo.svg" alt="" /></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- PRODUCTO -->
+                <li id="producto">
+                  <a id="ver-productos" class="menu1" href="#"> Productos </a>
+                  <ul id="producto-menu">
+                    <li>
+                      <a class="producto-item" href="/verProducto.html">
+                        Ver productos
+                      </a>
+                    </li>
+                    <li>
+                      <a class="producto-item" href="#">Componentes </a>
+                    </li>
+                    <span> -------- </span>
+                    <li><a class="producto-item" href="#">Algo mas</a></li>
+                  </ul>
+                </li>
+                <!-- PRODUCTO fin-->
+                <!-- ZONA -->
+                <li id="zona">
+                  <a id="ver-zona" class="menu1" href="#"> Zonas </a>
+                  <ul id="zona-menu">
+                    <li>
+                      <a class="zona-item" href="/verZona.html">
+                        Ver zonas
+                      </a>
+                    </li>
+                    <li>
+                      <a class="zona-item" href="#"> Zona norte </a>
+                    </li>
+                    <span>--------</span>
+                    <li>
+                      <a class="zona-item" href="#"> Algo mas </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- ZONA  fin-->
+                <!-- Nosotros-->
+              </ul>
+              <ul class="nav-interno">
+                <li class="mnu-pagina">
+                  <a class="ver-section" href="/index.html"> Home </a>
+                </li>
+                <li class="mnu-pagina">
+                  <a class="ver-section" href="#pagina2"> Nosotros </a>
+                </li>
+                <li class="mnu-pagina">
+                  <a class="ver-section" href="#pagina3"> Productos</a>
+                </li>
+                <li class="mnu-pagina">
+                  <a class="ver-section" href="#pagina4"> Contacto</a>
+                </li>
+                <!-- Nosotros   fin-->
+              </ul>
+              <!-- ul   fin-->
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+          <img id="muesca" src="/images/triangular.ico" alt="" />
+          <img id="muesca1" src="/images/triangular.ico" alt="" />
+        </nav>
+        <div id="linea1">
+          <p id="deslizar-texto">Fabricamos y comercializamos medicamentos para el consumo Humano</p>
+        </div>
+      </header>
+    </div>
+    <!-- Fin de la mnu-encabezados primera lineas -->
+    <!-- Fin de la mnu-encabezados primera lineas -->
+    <!-- Fin de la mnu-encabezados primera lineas -->
+    <section id="pagina1">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="20000">
+            <img src="/images/labo1.png" class="d-block w-100000" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="200000">
+            <img src="/images/labo2.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="200000">
+            <img src="/images/labo3.png" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+      <!-- 
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+       -->
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"> </span>
+        <span class="visually-hidden"> Next </span>
+      </button>
+        <!-- 
+      <a id="a-imagen"
+        href="https://api.whatsapp.com/send?text=Buen%20d%C3%ADa%20quisiera%20consultar%20sobre%20&phone=573126869891"
+        target="_blank">
+        <img id="imagen-whatsapp" src="/images/whatsapp.webp" alt="Imagen fija" />
+      </a>
+       -->
+    </section>
+    <!-- Fin de la seccion pagina 1 -->
+    <!-- Fin de la seccion pagina 1 -->
+    <!--Comienza pagina 2 -->
+
+    <section id="pagina2">
+      <div id="transcision">
+        <span> Con ética y responsabilidad ofrecemos al mercado </span>
+        <span> productos de excelente calidad. </span>
+      </div>
+
+      <div id="mnu-nosotros">
+        <div id="nosotros-I" class="css-pag">
+          <h2 id="denosotros" class="tit-nos">ACERCA DE NOSOTROS</h2>
+          <br />
+          <p>
+            <span>
+              Laboratorio del Caribe S.A. inició labores en Sincelejo el 20 de
+              marzo de 1984. Se obtiene el primer Registro Sanitario para el
+              producto comercializado bajo la marca Artrixin iniciándose la
+              expansión y posicionamiento en todo el territorio Nacional.
+              <br /><br />
+              A través de los años Laboratorio del Caribe S.A. ha crecido de
+              manera importante en el mercado Nacional, manteniendo una
+              posición de liderazgo y prestigio ante el cuerpo médico por la
+              calidad de sus productos.
+            </span>
+            <br /><br />
+          </p>
+          <div id="cuadrado">
+            <span>
+              Laboratorio del Caribe S.A., fue certificado con Buenas
+              Prácticas de Manufactura en el año 2002, lo que le permitirá en
+              el siglo XXI continuar ofreciendo medicamentos de excelente
+              calidad seguros y confiables al sistema de salud.
+            </span>
+          </div>
+          <br />
+          <br />
+          <h2 id="politica-calidad" class="tit-nos">POLÍTICAS DE CALIDAD</h2>
+          <br />
+          <p>
+            <span>Laboratorio del Caribe S.A., es una empresa farmacéutica que
+              está en un mejoramiento continuo, ofreciendo productos y
+              servicios confiables que cumplan con las normas de Buenas
+              Prácticas de Manufactura, para contribuir de esta forma al
+              bienestar de la Sociedad.
+              <br />
+              <br />
+              Con ética y responsabilidad ofrecemos al mercado productos de
+              excelente calidad, seguros y efectivos, que satisfacen las
+              necesidades del cliente, cumpliendo con normas Nacionales e
+              Internacionales, y respetando el medio ambiente.
+              <br /><br />
+              A través de la gestión adecuada de los recursos y el compromiso
+              asumido por nuestros colaboradores, Laboratorio del Caribe S.A.,
+              genera el nivel de rentabilidad acorde a las expectativas de los
+              socios, permitiendo el desarrollo integral de los miembros de
+              nuestra organización.
+            </span>
+          </p>
+          <br />
+          <h2 id="politica-calidad" class="tit-nos">OBJETIVOS DE CALIDAD.</h2>
+          <br />
+          <p>
+            <span>
+              Lograr el cumplimiento de las expectativas del cliente,
+              entregando productos a tiempo, efectivos, seguros y confiables
+              para el bienestar Social. Optimizar los tiempos de respuesta al
+              cliente.
+            </span>
+          </p>
+          <p>
+            <span>
+              >Lograr el compromiso de cada uno de nuestros Colaboradores a
+              través del mejoramiento Continuo de nuestros recursos.
+            </span>
+          </p>
+          <p>
+            <span>
+              >Generar excelente rentabilidad con el manejo efectivo de los
+              recursos.
+            </span>
+          </p>
+        </div>
+        <!-- Inicio segunda columna -->
+        <div id="nosotros-D" class="css-pag">
+          <h2 id="politica-calidad" class="tit-nos">MISIÓN.</h2>
+          <br />
+          <p>
+            <span>
+              Laboratorio del Caribe S.A., es una empresa farmacéutica que
+              tiene como misión, comercializar productos de excelente calidad,
+              cumpliendo con todas las Normas exigidas por las entidades que
+              nos vigilan, respetando el medio ambiente y generando de esta
+              forma bienestar a la comunidad.
+              <br /><br />
+              Laboratorio del Caribe propenderá por el desarrollo integral de
+              sus colaboradores al mismo tiempo que satisface las expectativas
+              de sus socios.
+              <br /><br />
+            </span>
+          </p>
+          <h2 id="politica-calidad" class="tit-nos">VISIÓN.</h2>
+          <br />
+          <p>
+            <span>
+              LABORATORIO DEL CARIBE S.A.S. para el año 2030 pretende ser uno
+              de los más reconocidos Laboratorios farmacéuticos de Colombia, y
+              estar presente en todo el territorio nacional, así como iniciar
+              su expansión a centro América ampliando su línea de productos
+              cada año, para hacer una contribución a la región, construyendo
+              herramientas para ser más competitivos y posicionarse como uno
+              de los principales laboratorios farmacéuticos en las regiones
+              donde hace presencia.
+            </span>
+          </p>
+          <br />
+          <h2 id="politica-calidad" class="tit-nos">VALORES CORPORATIVOS</h2>
+          <br />
+          <p>
+            <span class="list-container">
+              <span><strong>RESPETO:</strong> Aceptamos las decisiones y acciones
+                de los clientes internos y externos siendo tolerantes.</span>
+              <span><strong>COMPROMISO:</strong> Damos lo máximo de cada uno de
+                nosotros con sentido de pertenencia hacia la empresa.</span>
+              <span><strong>HONESTIDAD:</strong> Actuamos conforme a los
+                intereses comunes y no particulares de acuerdo a la ley y las
+                costumbres.</span>
+              <span><strong>LEALTAD:</strong> Somos fieles frente a los
+                compromisos y objetivos de la empresa.</span>
+              <span><strong>RESPONSABILIDAD:</strong> Somos conscientes de
+                nuestras actuaciones, cumpliendo cabalmente de forma que se
+                logren los objetivos de la empresa.</span>
+            </span>
+          </p>
+          <div id="foto"><img src="/images/foto.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <!-- Inicio pagina 3 =================================================-->
+    <!-- Inicio pagina 3 -->
+    <section id="pagina3">
+      <h2 class="tit-nos-pag3">PRODUCTOS</h2>
+      <div id="linea-horizontal"></div>
+      <br />
+      <p class="p-pag3">
+        *Click sobre la imagen para ver la ficha técnica de cada medicamento.
+      </p>
+      <div id="pag3-productos">
+        <div id="container1"></div>
+      </div>
+    </section>
+    <!-- fin pagina 3 =================================================-->
+    <!-- Inicio pagina 4 -->
+    <section id="pagina4">
+      <br><br><br>
+      <h2 class="tit-nos-pag4">CONTACTO</h2>
+      <div id="linea-horizontal4"></div>
+      <br />
+      <!-- pagina 4.1 -->
+      <div id="direcciones">
+        <div id="direcciones-I">
+          <h2 class="tit-pag4 pag4-I">CUENTAS CORRIENTES</h2>
+          <p>
+            <span>BANCO DE COLOMBIA</span><br />
+            <span>50604761202</span><br />
+            <span>BANCO BBVA</span><br />
+            <span>826007817 NIT: 892200917-3</span>
+          </p>
+          <br />
+          <h2 class="tit-pag4 pag4-I">LISTA DE PRECIOS 2017</h2>
+          <p>
+            <span><strong> Descarga aquí</strong></span><br />
+          </p>
+          <br />
+          <h2 class="tit-pag4 pag4-I">FORMATO DE PEDIDO</h2>
+          <p>
+            <span><strong> Descarga aquí</strong></span><br />
+          </p>
+        </div>
+        <div id="direcciones-D">
+          <h2 class="tit-pag4 pag4-D">INFORMACIÓN POR ZONAS</h2>
+          <div id="zonaID">
+            <div id="zonaI">
+              <p>
+                <span><strong>SINCELEJO, SUCRE</strong></span><br />
+                <span>CELULAR: (+57) 3135120781</span><br />
+                <span>E-mail: sincelejo@laboratoriodelcaribe.com</span><br />
+              </p>
+              <p>
+                <span><strong>BARRANQUILLA, ATLÁNTICO</strong></span><br />
+                <span>CELULAR: (+57) 3126873831</span><br />
+                <span>E-mail:</span><br />
+                <span>barranquilla@laboratoriodelcaribe.com</span><br />
+                <span>barranquilla1@laboratoriodelcaribe.com</span><br />
+              </p>
+              <p>
+                <span><strong>MONTERÍA, CÓRDOBA</strong></span><br />
+                <span>CELULAR: (+57) 3126874903</span><br />
+                <span>E-mail: monteria@laboratoriodelcaribe.com</span><br />
+              </p>
+              <p>
+                <span><strong>BUCARAMANGA, SANTANDER</strong></span><br />
+                <span>CELULAR: (+57) 3126874922</span><br />
+                <span>Email: bucaramanga@laboratoriodelcaribe.com</span><br />
+              </p>
+            </div>
+            <div id="zonaD">
+              <p>
+                <span><strong>CARTAGENA, BOLIVAR</strong></span><br />
+                <span>CELULAR: (+57) 3216987967</span><br />
+                <span>E-mail: cartagena@laboratoriodelcaribe.com</span><br />
+              </p>
+              <p>
+                <span><strong>VALLEDUPAR, CESAR</strong></span><br />
+                <span>CELULAR: (+57) 3126703794</span><br />
+                <span>E-mail: valledupar@laboratoriodelcaribe.com</span><br />
+              </p>
+              <p>
+                <span><strong>CÚCUTA, NORTE DE SANTANDER</strong></span><br />
+                <span>CELULAR: (+57) 3145247471</span><br />
+                <span>E-mail: cucuta@laboratoriodelcaribe.com</span><br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- pagina 4.2 -->
+      <div id="correos">
+        <div id="correosI">
+          <h2 class="tit-pag4">CORREOS DE LA COMPAÑÍA</h2>
+          <p>
+            administrativo@laboratoriodelcaribe.com
+            barranquilla@laboratoriodelcaribe.com
+            barranquilla1@laboratoriodelcaribe.com
+            barranquilla2@laboratoriodelcaribe.com
+            bucaramanga@laboratoriodelcaribe.com
+            bucaramanga1@laboratoriodelcaribe.com
+            cartagena@laboratoriodelcaribe.com
+            comercial@laboratoriodelcaribe.com
+            contabilidad@laboratoriodelcaribe.com
+            cucuta@laboratoriodelcaribe.com
+            direcciontecnica@laboratoriodelcaribe.com
+            gerencia@laboratoriodelcaribe.com
+            gerenciaventas@laboratoriodelcaribe.com
+            monteria@laboratoriodelcaribe.com
+            sincelejo@laboratoriodelcaribe.com
+            sincelejo1@laboratoriodelcaribe.com
+            valledupar@laboratoriodelcaribe.com
+            ventas@laboratoriodelcaribe.com comercial@laboratoriodelcaribe.com
+          </p>
+        </div>
+        <div id="correosD">
+          <h2 class="tit-pag4D">Queremos escucharte!</h2>
+
+          <form id="formulario-correo" action="procesar_formulario.php" method="POST">
+            <label class="label-correo" for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label class="label-correo" for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required />
+
+            <label class="label-correo" for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required />
+
+            <label class="label-correo" for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br /><br />
+
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </div>
+      <!-- pagina 4.3 -->
+      <div id="gogle-map">
+        <h2 id="tit-map">laboratorio del Caribe</h2>
+        <iframe id="mapa-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1968.8334407712973!2d-75.41080065071586!3d9.274028265514518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5914ed96a19587%3A0x476cf87d89af0f53!2sLABORATORIO%20DEL%20CARIBE!5e0!3m2!1sen!2sco!4v1684946281250!5m2!1sen!2sco"
+          width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    <!-- Inicia pagina 5======================-->
+    <section id="pagina5">
+      <div id="footer">
+        <div id="footer1">
+          <div class="footer1-hijo">
+            <p>
+              Dirección: Calle 38 No. 4A-184Lt 1 Manz A - Parque Industrial y
+              Comercial Sincelejo - Sincelejo Telefax: 605 2805941 - 605
+              2806160 Móvil: (+57) 312 686 9891 E-mail:
+              ventas@laboratoriodelcaribe.com Banco de Colombia (50604761202)
+              Banco Davivienda
+            </p>
+          </div>
+          <div class="footer1-hijo">
+            <p>Siguenos</p>
+            <div id="redesS">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook"
+                viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-tiktok"
+                viewBox="0 0 16 16">
+                <path
+                  d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" />
+              </svg>
+            </div>
+            <p>
+              ventas@laboratoriodelcaribe.com
+              comercial@laboratoriodelcaribe.com
+              sincelejo1@laboratoriodelcaribe.com
+              sincelejo@laboratoriodelcaribe.com
+              monteria@laboratoriodelcaribe.com
+              administrativo@laboratoriodelcatibe.com
+            </p>
+          </div>
+          <div class="footer1-hijo">
+            <p href="">Consúlte nuestra revista</p>
+            <img id="revista" src="/images/fotoc.webp" alt="" />
+          </div>
+        </div>
+
+        <div id="footer2">
+          <p id="footer2-hijo1">Copyright © 2023 | Aviso legal</p>
+          <p id="footer2-hijo2">servicius gratuitos</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="/app.js"></script>
+  <script src="/imagenes.js"></script>
+</body>
+
+</html>
